@@ -80,7 +80,7 @@
                                       <h5 class="card-title">{{$category->name}}</h5>
                                       <p class="card-text">{{$category->description}}</p>
                                       <div class="card-footer text-center">
-                                         <a href="#" class="btn">Mostrar</a>
+                                         <a href="/index" class="btn">Mostrar</a>
                                        </div>
                                    </div>
                                   
