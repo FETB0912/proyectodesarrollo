@@ -22,6 +22,13 @@ Route::get('/index', function () {
     return view('index');
 });
 
+Route::get('/service', function () {
+    return view('service');
+});
+
+Route::get('/acercade', function () {
+    return view('acercade');
+});
 Route::get('/category', [categoryController::class, 'show']);
 
 Route::get('/category/{category_id}', [categoryController::class, 'showService'])->name('show.service');
