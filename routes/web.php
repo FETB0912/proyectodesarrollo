@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\categoryController;
+use App\Http\Controllers\bookingController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,4 +23,8 @@ Route::get('/index', function () {
 });
 
 Route::get('/category', [categoryController::class, 'show']);
+
+Route::get('/booking', [bookingController::class, 'show']);
+
+
 
