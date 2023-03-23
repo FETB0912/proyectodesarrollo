@@ -24,4 +24,8 @@ Route::get('/index', function () {
 
 Route::get('/category', [categoryController::class, 'show']);
 
+Route::get('/category/{category_id}', [categoryController::class, 'showService'])->name('show.service');
+
+
+
 
