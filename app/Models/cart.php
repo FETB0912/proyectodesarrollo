@@ -5,9 +5,20 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class cart extends Model
+class Cart extends Model
 {
-    use HasFactory;
+    use HasFactory;    
+    /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
+    protected $table = 'carts';
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     protected $fillable = [
         'quantity',
         'subtotal',

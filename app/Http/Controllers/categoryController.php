@@ -26,6 +26,7 @@ class categoryController extends Controller
       //return view('category', array('categories'=>$categor));
 
       //categories->services; trae el servicio pero va eso debe estar bien las relaciones
+      //cambio
 
     } 
 
