@@ -8,6 +8,7 @@ use App\Models\category;
 
 
 use Illuminate\Support\Facades\Auth;
+use DB;
 
 class categoryController extends Controller
 {
@@ -16,8 +17,20 @@ class categoryController extends Controller
       $categories=category::get();
       //dd($categories->name);
       return view('category', [
-	  		'categories' => $categories
+	  	'categories' => $categories
 	  	]);
-    }
+
+
+
+      //$categor=DB::table('categories')
+                  //->where('name','=','Hogar')
+                  //->get();
+      //return view('category', array('categories'=>$categor));
+
+
+    } 
     
 }
+
+
+

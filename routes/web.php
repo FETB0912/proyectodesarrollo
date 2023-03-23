@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\categoryController;
+//use App\Http\Controllers\pruebaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,13 +14,14 @@ use App\Http\Controllers\categoryController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+   // return view('welcome');
+//});
 
 Route::get('/index', function () {
     return view('index');
 });
 
 Route::get('/category', [categoryController::class, 'show']);
+
 
