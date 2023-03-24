@@ -14,8 +14,8 @@ class categoryController extends Controller
 {
     public function show()
     {
-      $categories=category::get();
-      dd($categories->service);
+      $categories=category::limit(3)->get();
+     // dd($categories->service);
       return view('category', [
 	  	'categories' => $categories
 	  	]);
