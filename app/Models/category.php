@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Category extends Model
 {
@@ -24,6 +25,14 @@ class Category extends Model
         'description',
         'image',
     ];
+
+    /**
+     * Get the phone associated with the user.
+     */
+    public function services(): HasOne
+    {
+        return $this->hasOne(Service::class);
+    }
 }
 
 

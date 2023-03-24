@@ -7,13 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Booking extends Model
 {
-    use HasFactory;  
+    use HasFactory;
     /**
      * The table associated with the model.
      *
      * @var string
      */
-    protected $table = 'bookings';  
+    protected $table = 'bookings';
     /**
      * The attributes that are mass assignable.
      *
@@ -21,7 +21,5 @@ class Booking extends Model
      */
     protected $fillable = [
         'date',
-        
-        
     ];
 }

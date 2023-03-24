@@ -7,13 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Collaborator extends Model
 {
-    use HasFactory;  
+    use HasFactory;
     /**
      * The table associated with the model.
      *
      * @var string
      */
-    protected $table = 'collaborators';  
+    protected $table = 'collaborators';
     /**
      * The attributes that are mass assignable.
      *
@@ -24,6 +24,5 @@ class Collaborator extends Model
         'lastname',
         'phone',
         'email',
-        
     ];
 }
