@@ -1,59 +1,31 @@
 .posimagenes {
-    padding-top: none;
-  }
-  
-  .centro {
-    text-align: center;
-  }
-  .titulo {
-    font-size: 48px;
-  }
-  .card img {
-    height: 200px;
-  }
-  .card a {
-    color: rgb(10, 14, 13);
-    background-color: #a5c5e4; /*color del boton*/
-  }
-  .card a:hover {
-    background-color: #5eb0d9; /*color del boton al selecionar*/
-  }
-  .card-body {
-    background-color: #e1eff5;
-  }
-  .img-border {
-    border-radius: 150px 150px;
-  }
-  .iconos ul {
-    list-style-type: none;
-  }
-  
-  /*Osman CSS si lo uso*/
-  .titulo
-{
-    font-size: 48px;;
+  padding-top: none;
 }
-.card img
-{
-    height: 200px;
+
+.centro {
+  text-align: center;
 }
-.card a
-{
-    color: black;
-    background-color:   #bac8d5;
+.titulo {
+  font-size: 48px;
 }
-.card a:hover
-{
-    background-color:   #32506b;
+.card img {
+  height: 200px;
 }
-.card-body
-{
-    background-color:  #0d3c62;
+.card a {
+  color: rgb(10, 14, 13);
+  background-color: #a5c5e4; /*color del boton*/
 }
-.img-border
-{
-    border-radius: 150px 150px;
+.card a:hover {
+  background-color: #5eb0d9; /*color del boton al selecionar*/
 }
-.iconos ul{
-    list-style-type: none;
+.card-body {
+  background-color: #e1eff5;
 }
+.img-border {
+  border-radius: 150px 150px;
+}
+.iconos ul {
+  list-style-type: none;
+}
+
+/*Osman CSS si lo uso*/
