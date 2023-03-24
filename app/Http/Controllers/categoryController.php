@@ -15,7 +15,7 @@ class categoryController extends Controller
     public function show()
     {
       $categories=category::get();
-      //dd($categories->name);
+      dd($categories->service);
       return view('category', [
 	  	'categories' => $categories
 	  	]);
@@ -34,7 +34,7 @@ class categoryController extends Controller
     {
      // dd($request);
       $service = Service::where('category_id', $request->category_id)->first();
-      dd($service);
+      dd($service->category);
       
     }
 
