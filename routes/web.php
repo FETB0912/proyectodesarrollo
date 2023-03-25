@@ -14,7 +14,7 @@ use App\Http\Controllers\categoryController;
 |
 */
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/index', function () {
@@ -31,6 +31,12 @@ Route::get('/acercade', function () {
 Route::get('/category', [categoryController::class, 'show']);
 
 Route::get('/category/{category_id}', [categoryController::class, 'showService'])->name('show.service');
+
+//AdminCRUD
+Route::get('/tasks',[categoryController::class,'categoryAdmin']);
+Route::post('/tasks',[categoryController::class,'storeCategory']);
+
+//ADMIN
 
 
 

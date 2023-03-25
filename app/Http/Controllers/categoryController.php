@@ -38,7 +38,30 @@ class categoryController extends Controller
       
     }
 
-    
+    //Probando CRUD Admin
+    public function categoryAdmin()
+    {
+      return view('tasks.categoryadmin');
+    }
+
+    public function storeCategory(Request $request)
+    {
+      //dd($request->all());
+      //
+      $data = $request -> only('name', 'description', 'image');
+      
+      //Category::create([
+        //'name' => $request -> name,
+       // 'description' => $request -> description,
+      //  'image' => $request -> image,
+     // ]);
+
+      //category::create($request -> all());
+      Category::create($data);
+
+    }
+
+    //Fin de CRUD Admin
     
 }
 
