@@ -29,7 +29,10 @@ Route::get('/service', function () {
 Route::get('/acercade', function () {
     return view('acercade');
 });
+
+
 Route::get('/category', [categoryController::class, 'show']);
 
-Route::get('/services/{category_id}', [categoryController::class, 'servicesByCategory']);
+Route::get('/services/{category_id}', [categoryController::class,'servicesByCategory']);
+
 Route::get('/category/{category_id}', [categoryController::class, 'showService'])->name('show.service');

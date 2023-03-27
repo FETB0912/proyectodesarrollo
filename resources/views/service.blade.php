@@ -92,7 +92,8 @@
                                 </div>
                                 <h5 class="card-title">{{ $service->name }}</h5>
                                 <div class="card-footer text-center">
-                                    <a href="#" class="btn mt-3">Reservar</a>
+                                    <p class="card-text">Reserva tu servicio dando click en reservar</p>
+                                    <a href="#" class="btn mt-1">Reservar</a>
                                 </div>
                             </div>
                         </div>
