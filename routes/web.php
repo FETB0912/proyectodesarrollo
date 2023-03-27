@@ -13,8 +13,9 @@ use App\Http\Controllers\categoryController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/index', function () {
@@ -28,10 +29,10 @@ Route::get('/service', function () {
 Route::get('/acercade', function () {
     return view('acercade');
 });
+
+
 Route::get('/category', [categoryController::class, 'show']);
 
+Route::get('/services/{category_id}', [categoryController::class,'servicesByCategory']);
+
 Route::get('/category/{category_id}', [categoryController::class, 'showService'])->name('show.service');
-
-
-
-
