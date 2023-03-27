@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Cart extends Model
 {
@@ -22,8 +23,11 @@ class Cart extends Model
     protected $fillable = [
         'quantity',
         'subtotal',
-        'total',
-        
-        
+        'total',    
     ];
+
+    public function booking(): HasOne
+    {
+        return $this->hasOne(Booking::class);
+    }
 }
