@@ -12,10 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('bookings', function (Blueprint $table) {
-            $table->uuid('booking_id')->primary();
+            $table->id('booking_id');
             $table->date('date');
-            $table->foreignUuid('user_id')->references('user_id')->on('users');
-            $table->foreignUuid('service_id')->references('service_id')->on('services');
+            $table->foreignId('user_id')->references('user_id')->on('users');
+            $table->foreignId('service_id')->references('service_id')->on('services');
           
         });
     }

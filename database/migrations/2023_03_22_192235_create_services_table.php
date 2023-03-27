@@ -12,11 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('services', function (Blueprint $table) {
-            $table->uuid('service_id')->primary();
+            $table->id('service_id');
             $table->string('name');
-            $table->foreignUuid('category_id')->references('category_id')->on('categories');
+            $table->foreignId('category_id')->references('category_id')->on('categories');
             $table->double('price', 8,2);
-            $table->foreignUuid('colab_id')->references('colab_id')->on('collaborators');
+            $table->foreignId('collab_id')->references('collab_id')->on('collaborators');
             $table->timestamps();
             $table->softDeletes();
         });
