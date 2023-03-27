@@ -36,7 +36,7 @@ class categoryController extends Controller
             ->join('categories as c', function ($join) {
                 $join->on('s.category_id', '=', 'c.category_id');
             })->join('collaborators as co', function ($join) {
-                $join->on('s.colab_id', '=', 'co.colab_id');
+                $join->on('s.collab_id', '=', 'co.collab_id');
             })
             ->where('s.category_id', $request->category_id)->orderBy('s.category_id', 'desc')
             ->select(
