@@ -92,7 +92,12 @@
                                 </div>
                                 <h5 class="card-title">{{ $service->name }}</h5>
                                 <div class="card-footer text-center">
+<<<<<<< HEAD
                                     <a href="#" class="btn mt-3">Reservar</a>
+=======
+                                    <p class="card-text">Reserva tu servicio dando click en reservar</p>
+                                    <a href="#" class="btn mt-1">Reservar</a>
+>>>>>>> origin
                                 </div>
                             </div>
                         </div>
@@ -108,4 +113,8 @@
 
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> origin

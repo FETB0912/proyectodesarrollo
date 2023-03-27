@@ -20,6 +20,7 @@ class categoryController extends Controller
             'categories' => $categories
         ]);
 
+<<<<<<< HEAD
         //$categor=DB::table('categories')
         // ->where('name','=','Hogar')
         //->get();
@@ -28,6 +29,9 @@ class categoryController extends Controller
         //categories->services; trae el servicio pero va eso debe estar bien las relaciones
         //cambio
 
+=======
+
+>>>>>>> origin
     }
 
     public function showService(Request $request)
@@ -65,11 +69,23 @@ class categoryController extends Controller
         $data = ['services' =>  $services, 'categorie' => $categorie];
 
         return view('service')->with('data', $data);
+<<<<<<< HEAD
         //$service = Service::where('category_id', $request->category_id)->first();
+=======
+       
+>>>>>>> origin
     }
 }
 
 
 
+            //$categor=DB::table('categories')
+            // ->where('name','=','Hogar')
+            //->get();
+            //return view('category', array('categories'=>$categor));
+
+            //categories->services; trae el servicio pero va eso debe estar bien las relaciones
+            //cambio
 
 
+ //$service = Service::where('category_id', $request->category_id)->first();
