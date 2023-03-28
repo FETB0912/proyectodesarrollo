@@ -8,6 +8,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LogoutController;
+
 //
 
 
@@ -28,9 +29,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/index', function () {
-    return view('index');
-});
+Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/service', function () {
     return view('service');

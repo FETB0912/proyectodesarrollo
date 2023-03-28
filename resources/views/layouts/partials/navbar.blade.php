@@ -13,26 +13,32 @@
             <a class="nav-link active" aria-current="page" href="#">INICIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ACERCA DE</a>
+            <a class="nav-link active" aria-current="page" href="#">ACERCA DE</a>
           </li>
+          
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link active" aria-current="page" href="/category" class="btn mt-1" role="button" >
               SERVICIOS
             </a>
+            <!--
             <ul class="dropdown-menu">
             <li><a class="dropdown-item " href="#">HOGAR</a></li>
             <li><a class="dropdown-item" href="#">BELLEZA</a></li>
             <li><a class="dropdown-item" href="#">TECNICOS</a></li>
           </ul>
+           -->
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">CONTACTOS</a>
-        </li>
-        <form class="d-flex" >
-         <input class="form-control me-2" type="search" placeholder="Search" >
-         <button class="btn btn-outline-success" type="submit">Search</button>
+       
+       
+        
+        
+      </ul>
+     
+       
+      <form class="d-flex" >
+      
          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          @auth
+         @auth
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             {{auth()->user()->name ?? auth()->user()->username}}
@@ -41,13 +47,10 @@
             <li><a class="dropdown-item" href="/logout">Logout</a></li>
           </ul>
         </li>
+        @endauth
         </form>
-        
-      </ul>
-     
-          @endauth
-
           
     </div>
+   
   </div>
 </nav>

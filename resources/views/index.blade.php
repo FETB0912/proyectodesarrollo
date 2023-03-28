@@ -18,115 +18,9 @@
     
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;" >
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="img/LOGO.png" alt="Logo" width="100" height="90" >
-        MULTITRABAJOS HN
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ACERCA DE</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              SERVICIOS
-            </a>
-            <ul class="dropdown-menu">
-            <li><a class="dropdown-item " href="#">HOGAR</a></li>
-            <li><a class="dropdown-item" href="#">BELLEZA</a></li>
-            <li><a class="dropdown-item" href="#">TECNICOS</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">CONTACTOS</a>
-        </li>
-        <form class="d-flex" >
-         <input class="form-control me-2" type="search" placeholder="Search" >
-         <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </ul>
-      <span class="material-symbols-outlined" class="icon" style="font-size: 50px"> person </span>
-      <i class="bi bi-cart-plus-fill" style="font-size: 50px"></i>
-    </div>
-  </div>
-</nav>
+@include('layouts.partials.navbar')
 
-<!--CARRUSEL-->
-<div class="container" style="margin-bottom: 1%">
-  <div class="borde">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1">
-        </button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2">
-        </button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3">
-        </button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="3"
-          aria-label="Slide 4">
-        </button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="4"
-          aria-label="Slide 5">
-        </button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/jar.jpg" class="d-block w-100 " alt="imagen" width="50" />
-        </div>
-        <div class="carousel-item">
-          <img src="img/refri.jpg" class="d-block w-100 " alt="imagen" width="50" />
-        </div>
-        <div class="carousel-item">
-         <img src="img/elec.jpg" class="d-block w-100 " alt="imagen" width="50" />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next" >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    </div>
- </div>
+@include('layouts.partials.carrusel')
  
  <!--CATEGORIAS-->
  <section  >
@@ -135,10 +29,13 @@
        <div class="borde">
           <hr class="border border-primary border-3 opacity-75">
           <H2 class="centro"> ¿Quiénes somos?</H2>
-          <p class="centro" > This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-            This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-            This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-            This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+          <p class="centro" > Alguna vez te has visto en la necesidad de buscar a una persona 
+            que pueda reparar o realizar algún otro servicio pero no cuentas con un número de 
+            teléfono o no tienes referencia alguna de los trabajos que realiza esa persona que
+             te recomendaron. ¡Multitrabajos HN está para ayudarte! Contamos con un directorio 
+             de personas cuyos servicios pueden ser lo que estés buscando, desde alguien que 
+             pueda reparar tu lavadora hasta una persona que pueda maquillarte para ese evento 
+             importante.
          </p>
          <hr >
          <H2 class=""> CATEGORIAS</H2>
@@ -146,42 +43,8 @@
          <div class="col-12 col-md-12 col-lg-9  " style="width: 100%">
            <div class="row justify-content-center ">
              <div class="row row-cols-1 row-cols-md-3 g-3">
-                <div class="col">
-                  <div class="card h-100">
-                   <img src="img/ho1.jpg" class="card-img-top" alt="...">
-                   <div class="card-body">
-                     <h5 class="card-title">HOGAR</h5>
-                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                     <div class="card-footer text-center">
-                        <a href="#" class="btn">Mostrar</a>
-                     </div>
-                    </div>
-                 </div>
-               </div>
-               <div class="col">
-                 <div class="card h-100">
-                   <img src="img/be1.jpg" class="card-img-top" alt="...">
-                   <div class="card-body">
-                     <h5 class="card-title">BELLEZA</h5>
-                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                     <div class="card-footer text-center">
-                       <a href="#" class="btn">Mostrar</a>
-                      </div>
-                   </div>
-                 </div>
-               </div>
-               <div class="col">
-                 <div class="card h-100">
-                   <img src="img/refri.jpg" class="card-img-top" alt="...">
-                   <div class="card-body">
-                     <h5 class="card-title">TECNICOS</h5>
-                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                      <div class="card-footer text-center">
-                       <a href="#" class="btn">Mostrar</a>
-                     </div>
-                   </div>
-                  </div>
-                </div>
+             @include('layouts.partials.category')
+
              </div>
             </div>
           </div>

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('bookings', function (Blueprint $table) {
             $table->id('booking_id');
             $table->date('date');
-            $table->foreignId('user_id')->references('user_id')->on('users');
+            $table->foreignId('id')->references('id')->on('users');
             $table->foreignId('service_id')->references('service_id')->on('services');
           
         });
