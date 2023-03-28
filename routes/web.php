@@ -63,3 +63,19 @@ Route::get('/home', [HomeController::class, 'index']);
 
 //logout
 Route::get('/logout', [LogoutController::class, 'logout']);
+
+
+//FERNANDO ENRIQUE TORRES CRUD
+//TODO HACERCA DE CATEGORIES
+
+Route::get('/add-category', [categoryController::class, 'addCategory']);
+
+Route::post('/add-category',[categoryController::class, 'storeCategory'])->name('category.store');
+
+Route::get('/all-categories', [categoryController::class, 'categories']);
+
+Route::get('/edit-category/{category_id}', [categoryController::class, 'editCategory']);
+
+Route::post('/edit-category',[categoryController::class, 'updateCategory'])->name('category.update');
+
+Route::get('/delete-category/{category_id}', [categoryController::class, 'deleteCategory']);
