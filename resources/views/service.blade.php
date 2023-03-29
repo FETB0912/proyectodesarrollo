@@ -9,10 +9,6 @@
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!--iconos-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!--estilo css.-->
     <link rel="stylesheet" href="/css/estilo.css" />
 </head>
@@ -20,44 +16,37 @@
 <body>
     <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand"  style="color: black;  font-size: 25px;" href="/">
                 <img src="/img/LOGO.png" alt="Logo" width="100" height="90">
                 MULTITRABAJOS HN
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ACERCA DE</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            SERVICIOS
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item " href="#">HOGAR</a></li>
-                            <li><a class="dropdown-item" href="#">BELLEZA</a></li>
-                            <li><a class="dropdown-item" href="#">TECNICOS</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACTOS</a>
-                    </li>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </ul>
-                <span class="material-symbols-outlined" class="icon" style="font-size: 50px"> person </span>
-                <i class="bi bi-cart-plus-fill" style="font-size: 50px"></i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link active" style="color: black;  font-size: 23px; " aria-current="page" href="/" class="btn mt-1" role="button" >INICIO</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active" style="color: black;  font-size: 23px;  " aria-current="page" href="/acercade" class="btn mt-1" role="button" >ACERCA DE</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link active" style="color: black;  font-size: 23px;  " aria-current="page" href="/category" class="btn mt-1" role="button" >
+              SERVICIOS
+            </a>
+            <!--
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item " href="#">HOGAR</a></li>
+            <li><a class="dropdown-item" href="#">BELLEZA</a></li>
+            <li><a class="dropdown-item" href="#">TECNICOS</a></li>
+          </ul>
+           -->
+        </li> 
+   
+      </ul>
+                   
             </div>
         </div>
     </nav>
@@ -78,13 +67,7 @@
                                 <h5 class="card-title">{{ $service->full_name }}</h5>
                                 <div class="iconos">
                                     <ul class="action">
-                                        <div class="ranking">
-                                            <i class="bi bi-star-fill starts"></i>
-                                            <i class="bi bi-star-fill starts"></i>
-                                            <i class="bi bi-star-fill starts"></i>
-                                            <i class="bi bi-star-fill starts"></i>
-                                            <i class="bi bi-star-fill starts fa-gray"></i> (6)
-                                        </div>
+                                      
                                         <li><i class="bi bi-coin"> {{ $service->price }}</i></li>
                                         <li><i class="bi bi-telephone-fill"> {{ $service->phone }}</i></li>
                                         <li><i class="bi bi-envelope-fill"> {{ $service->email }}</i></li>

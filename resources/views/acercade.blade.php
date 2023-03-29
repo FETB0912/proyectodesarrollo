@@ -17,49 +17,7 @@
 </head>
 <body>
     <!--Navbar-->
-<nav class="navbar navbar-expand-lg" >
-  <div class="container-fluid">
-  <a class="navbar-brand" href="#">
-      <img src="img/LOGO.png" alt="Logo" width="100" height="90" >
-    MULTITRABAJOS HN
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="#">INICIO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">ACERCA DE</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            SERVICIOS
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item " href="#">HOGAR</a></li>
-            <li><a class="dropdown-item" href="#">BELLEZA</a></li>
-            <li><a class="dropdown-item" href="#">TECNICOS</a></li>
-            
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">CONTACTOS</a>
-        </li>
-        <form class="d-flex" >
-        <input class="form-control me-2" type="search" placeholder="Search" >
-        <button class="btn btn-outline-success" type="submit">Search</button>
-        
-      </form>
-      
-      </ul>
-      <span class="material-symbols-outlined" class="icon" style="font-size: 40px;"> person </span>
-      <i class="bi bi-cart-plus-fill" style="font-size: 40px;"></i>
-    </div>
-  </div>
-</nav>
+    @include('layouts.partials.navbar')
 
 <!--Acerca de-->
 <div class="container-fluid text-white  " style="background-image:url('img/topic.png'); background-size:cover; height:200px; vertical-align: middle;">
@@ -105,54 +63,7 @@
       <div class="col-2"></div>
   </div>
 </div>
-<footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
-  <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
-    <div class="row">
-      <div class="col-lg-3 mb-3">
-        <a class="d-inline-flex  mb-2 text-body-secondary text-decoration-none" href="/" aria-label="Bootstrap">
-        <img src="img/LOGO-clip.png" alt="Logo" width="100" height="90" >
-          
-          <span class="fs-5">MULTITRABAJOS HN</span>
-        </a>
-        <ul class="list-unstyled small">
-          <li class="mb-2">Designed and built with all the love in the world by the .</li>
-          
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-        <h5>Categorías</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="/">HOGAR</a></li>
-          <li class="mb-2"><a href="">BELLEZA</a></li>
-          <li class="mb-2"><a href="">TECNICOS</a></li>
-         
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>SERVICIOS</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="">Servicios/ Presione aquí</a></li>
-          
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>COMENTARIOA</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="">Comentarios / Clientes</a></li>
-         
-         
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>CONTACTOS</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="">Ayuda</a></li>
-         
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
+@include('layouts.partials.footer')
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
