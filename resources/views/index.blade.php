@@ -43,9 +43,32 @@
           </div>
        </div>
      
-       <!------ Tarjetas ----->
        
   </section>
+  <div class="container-fluid  text-white text-center">
+<br>  
+<h1>Que nos hace differentes</h1>
+  <div class="row">
+  <div class="col-2"></div>
+     <div class="col text-center parra" style="font-size: 20px; color: black">
+        <i class="bi bi-megaphone" style="font-size: 60px; color: black" ></i>
+        <h2>Promueve tu negocio</h2>
+        <p >Promueve tu negocio. Se contratado mostrando tus servicios,
+        muestra los trabajos o servicio que proporcionas con solo dar un click, contactanos</p>
+      </div>
+      <div class="col-1"></div>
+      <div class="col text-center parra" style="font-size: 20px; color: black">
+      <i class="bi bi-person-badge"  style="font-size: 55px;"></i>
+        <h2>Fundadores</h2>
+        <p >Equipo de trabajo para el desarrollo de Multitrabajos HN
+
+        
+        </p>
+        <a class="btn btn-primary" href="/fundadores">FUNDADORES</a>
+      </div>
+      <div class="col-2"></div>
+  </div>
+</div>
   @include('layouts.partials.footer')
 </div>
 

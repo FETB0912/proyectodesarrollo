@@ -7,123 +7,52 @@
          <div class="row justify-content-center ">
            <hr>
            <br>
-           <H2 class=""> SERVICIOS MAS SOLICITADOS</H2>
+           <H2 class=""> FUNDADORES</H2>
            <hr>
-           <section class="personal ">
-             <div class="row mt-3">
-               <div class="card-group g-2">
-                  <!--- Tarjeta 1 --->
-                  <div class="col">
-                    <div class="card text-bg-light" style="width: 20rem;">
-                      <img src="" width="50" height="140" class="card-img-top img-border">
-                      <div class="card-body text-dark" >
-                        <h5 class="card-title" style="color: white">Adriana Carranzas</h5>
-                        <div class="iconos">
-                         <ul class="action">
-                       
-                         <i class="bi bi-clock" style="color: white"> 5 años de experiencia</i>
-                         <li><i class="bi bi-coin" style="color: white"> L 900.00</i></li>
-                         <li><i class="bi bi-telephone-fill" style="color: white"> 8754-2555</i></li>
-                       </ul>
-                     </div>
-                     <h5 class="card-title" style="color: white">Limpieza</h5>
-                     <p class="card-text" style="color: white">Reserva tu servicio dando click en reservar</p>
-                     <div class="card-footer text-center ">
-                       <a href="/category" class="btn" style="color: white">Reservar</a>
-                      </div>
-                    </div>
-                  </div>
-               </div>
-               <!--- Tarjeta 2 --->
-               <div class="col">
-                 <div class="card text-bg-light" style="width: 20rem;">
-                   <img src="img/per1.jpg" width="50" height="140" class="card-img-top img-border">
-                   <div class="card-body  text-dark">
-                     <h5 class="card-title" style="color: white">Card title</h5>
-                     <div class="iconos">
-                       <ul class="action">
-                        
-                         <i class="bi bi-clock" style="color: white"> 5 años de experiencia</i>
-                         <li><i class="bi bi-coin" style="color: white"> L 900.00</i></li>
-                         <li><i class="bi bi-telephone-fill" style="color: white"> 8754-2555</i></li>
-                       </ul>
-                     </div>
-                     <h5 class="card-title" style="color: white">Make-up</h5>
-                     <p class="card-text" style="color: white">Reserva tu servicio dando click en reservar</p>
-                     <div class="card-footer text-center">
-                       <a href="/category" class="btn" style="color: white">Reservar</a>
-                      </div>
-                   </div>
-                 </div>
-                </div>
-                <!--- Tarjeta 3 --->
-                <div class="col">
-                  <div class="card text-bg-light" style="width: 20rem;">
-                   <img src="img/per1.jpg" width="50" height="140" class="card-img-top img-border">
-                   <div class="card-body  text-dark">
-                     <h5 class="card-title" style="color: white">Card title</h5>
-                     <div class="iconos">
-                        <ul class="action">
-                          
-                          <i class="bi bi-clock" style="color: white"> 7 años de experiencia</i>
-                          <li><i class="bi bi-coin" style="color: white"> L 900.00</i></li>
-                          <li><i class="bi bi-telephone-fill" style="color: white"> 8754-2555</i></li>
-                        </ul>
-                     </div>
-                     <h5 class="card-title" style="color: white">Pedicure</h5>
-                     <p class="card-text" style="color: white">Reserva tu servicio dando click en reservar</p>
-                     <div class="card-footer text-center">
-                       <a href="/category" class="btn" style="color: white">Reservar</a>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-               <!--- Tarjeta 4 --->
-               <div class="col">
-                 <div class="card text-bg-light" style="width: 20rem;">
-                   <img class="card-img-top img-border" src="http://resizer.sevilla.abc.es/resizer/resizer.php?imagen=https://sevilla.abc.es/estilo/bulevarsur/wp-content/uploads/sites/14/2020/07/cortes-de-pelo-adelgazan-rostro.jpg&nuevoancho=652" width="50" height="140">
-                   <div class="card-body  text-dark">
-                     <h5 class="card-title" style="color: white">Card title</h5>
-                     <div class="iconos">
-                       <ul class="action">
-                       
-                         <i class="bi bi-clock" style="color: white"> 3 años de experiencia</i>
-                         <li><i class="bi bi-coin" style="color: white"> L 900.00</i></li>
-                         <li><i class="bi bi-telephone-fill" style="color: white"> 8754-2555</i></li>
-                        </ul>
-                     </div>
-                     <h5 class="card-title" style="color: white">Jardinería</h5>
-                     <p class="card-text" style="color: white">Reserva tu servicio dando click en reservar</p>
-                     <div class="card-footer text-center">
-                       <a href="/category" class="btn" style="color: white">Reservar</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+           <div class="card-group">
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title" style="color: white">Sonia Padilla</h5>
+      <p class="card-text" style="color: white">Lic. en Informática administrativa</p>
+    </div>
+    
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title" style="color: white">Osman Cruz</h5>
+      <p class="card-text" style="color: white">Ing. en Tecnologias Computacionales</p>
+    </div>
+ 
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title" style="color: white">Maria Jimenez</h5>
+      <p class="card-text" style="color: white">Lic. en Informática administrativa</p>
+    </div>
+   
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title" style="color: white">Fernando Torres</h5>
+      <p class="card-text" style="color: white">Ing. en Tecnologias Computacionales</p>
+    </div>
+    
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title" style="color: white">Alice López</h5>
+      <p class="card-text" style="color: white">Ing. en Tecnologias Computacionales</p>
+    </div>
+   
+  </div>
+</div>
+</div>
               </div>
-              <br>
-              <br>
-               <!--- Tarjeta 5 --->
-               <div class="col">
-                 <div class="card text-bg-light" style="width: 20rem;">
-                   <img class="card-img-top img-border" src="http://resizer.sevilla.abc.es/resizer/resizer.php?imagen=https://sevilla.abc.es/estilo/bulevarsur/wp-content/uploads/sites/14/2020/07/cortes-de-pelo-adelgazan-rostro.jpg&nuevoancho=652" width="50" height="140">
-                   <div class="card-body  text-dark">
-                     <h5 class="card-title" style="color: white">Card title</h5>
-                     <div class="iconos">
-                       <ul class="action">
-                       
-                         <i class="bi bi-clock" style="color: white"> 3 años de experiencia</i>
-                         <li><i class="bi bi-coin" style="color: white"> L 900.00</i></li>
-                         <li><i class="bi bi-telephone-fill" style="color: white"> 8754-2555</i></li>
-                        </ul>
-                     </div>
-                     <h5 class="card-title" style="color: white">Jardinería</h5>
-                     <p class="card-text" style="color: white">Reserva tu servicio dando click en reservar</p>
-                     <div class="card-footer text-center">
-                       <a href="/category" class="btn" style="color: white">Reservar</a>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </section> 
