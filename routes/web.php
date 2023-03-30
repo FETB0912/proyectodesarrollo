@@ -46,6 +46,9 @@ Route::get('/acercade', function () {
 Route::get('/admin', function () {
     return view('admin');
 });
+Route::get('/fundadores', function () {
+    return view('fundadores');
+});
 
 Route::get('/category', [categoryController::class, 'show']);
 

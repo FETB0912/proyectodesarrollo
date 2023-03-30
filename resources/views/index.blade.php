@@ -44,7 +44,7 @@
        </div>
      
        <!------ Tarjetas ----->
-       @include('layouts.partials.tarjetas')
+       
   </section>
   @include('layouts.partials.footer')
 </div>
