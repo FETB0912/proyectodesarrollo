@@ -22,7 +22,7 @@
     <img src="img/osman.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title" style="color: white">Osman Cruz</h5>
-      <p class="card-text" style="color: white">Ing. en Tecnologias Computacionales</p>
+      <p class="card-text" style="color: white">Ing. en Tecnologías Computacionales</p>
     </div>
  
   </div>
@@ -38,7 +38,7 @@
     <img src="img/fernanda.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title" style="color: white">Fernando Torres</h5>
-      <p class="card-text" style="color: white">Ing. en Tecnologias Computacionales</p>
+      <p class="card-text" style="color: white">Ing. en Tecnologías Computacionales</p>
     </div>
     
   </div>
@@ -46,7 +46,7 @@
     <img src="img/alice.jpg"class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title" style="color: white">Alice López</h5>
-      <p class="card-text" style="color: white">Ing. en Tecnologias Computacionales</p>
+      <p class="card-text" style="color: white">Ing. en Tecnologías Computacionales</p>
     </div>
    
   </div>
