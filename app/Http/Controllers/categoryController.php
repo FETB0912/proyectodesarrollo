@@ -93,7 +93,10 @@ class categoryController extends Controller
 
     public function editCategory($category_id)
     {
-        $category = Category::find($category_id);
+       // dd($category_id);
+        //$service = Service::where('category_id', $request->category_id)->first();
+        $category = Category::where('category_id', $category_id)->first();
+        //dd($category);
         return view('edit-category',compact('category'));
     }
 
@@ -105,7 +108,11 @@ class categoryController extends Controller
         //ojo aqui
         $imageName = time().'.'.$image->extension();//error en esta linea- para que funcione tiene que subir otra imagen para funcionar o poner la misma
         $image->move(public_path('images'),$imageName);
-
+        //dd($request);
+        //$category = Category::where('category_id', $request->category_id)->first();
+    
+       
+        //dd($category);
         $category = Category::find($request->category_id);
         $category->name=$name;
         $category->description=$description;

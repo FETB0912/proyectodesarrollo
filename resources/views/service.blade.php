@@ -63,7 +63,7 @@
                     <div class="col">
                         <div class="card text-bg-light" style="width: 17rem;">
                             <img class="card-img-top" src="{{ $service->url_image }}" width="50" height="140">
-                            <div class="card-body text-black">
+                            <div class="card-body text-white">
                                 <h5 class="card-title">{{ $service->full_name }}</h5>
                                 <div class="iconos">
                                     <ul class="action">
@@ -84,7 +84,9 @@
                 </div>
             @endforeach
         </div>
+        
     </div>
+    
     <div class="pt-5"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">

@@ -8,6 +8,10 @@
     <title>All Categories</title>
 </head>
 <body>
+    <div>
+    @include('layouts.partials.navbar')
+    </div>
+
     <section style="padding-top:60px;">
         <div class="container">
            <div class="row">

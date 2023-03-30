@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('bookings', function (Blueprint $table) {
-            $table->id('booking_id');
+            $table->bigIncrements('booking_id');
             $table->date('date');
             $table->foreignId('id')->references('id')->on('users');
             $table->foreignId('service_id')->references('service_id')->on('services');

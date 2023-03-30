@@ -47,7 +47,7 @@
         @endauth
         </form>
         <li class="nav-item">
-            <a class="nav-link active" style="color: black;  font-size: 25px;  font-weight: bold;" aria-current="page" href="/register">REGISTER / LOGIN</a>
+            <a class="nav-link active" style="color: black;  font-size: 25px;  font-weight: bold;" aria-current="page" href="/register">REGISTER | LOGIN</a>
           </li> 
      
  

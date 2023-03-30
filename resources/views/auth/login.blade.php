@@ -22,6 +22,7 @@
   </div>
   <div class="mb-3 ">
    <a href="/register">Create account</a>
+   <a href="/admin">Administrator account</a>
   </div>
   <button type="submit" class="btn btn-primary" href="/index">Submit</button>
 </form>

@@ -8,7 +8,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LogoutController;
-
+use App\Http\Controllers\TarjetaController;
 //
 
 
@@ -31,14 +31,21 @@ Route::get('/', function () {
 
 Route::get('/', [HomeController::class, 'index']);
 
+
 Route::get('/service', function () {
     return view('service');
 });
+
+//tarjeta
+//Route::get('/', [TarjetaController::class, 'index']);
 
 Route::get('/acercade', function () {
     return view('acercade');
 });
 
+Route::get('/admin', function () {
+    return view('admin');
+});
 
 Route::get('/category', [categoryController::class, 'show']);
 
@@ -60,6 +67,7 @@ Route::post('/login', [LoginController::class, 'login']);
 
 //home
 Route::get('/home', [HomeController::class, 'index']);
+
 
 //logout
 Route::get('/logout', [LogoutController::class, 'logout']);
