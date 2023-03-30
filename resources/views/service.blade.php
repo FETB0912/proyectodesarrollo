@@ -63,7 +63,7 @@
                     <div class="col">
                         <div class="card text-bg-light" style="width: 17rem;">
                             <img class="card-img-top" src="{{ $service->url_image }}" width="50" height="140">
-                            <div class="card-body text-white">
+                            <div class="card-body text-black">
                                 <h5 class="card-title">{{ $service->full_name }}</h5>
                                 <div class="iconos">
                                     <ul class="action">
@@ -76,7 +76,7 @@
                                 <h5 class="card-title">{{ $service->name }}</h5>
                                 <div class="card-footer text-center">
                                     <p class="card-text">Reserva tu servicio dando click en reservar</p>
-                                    <a href="#" class="btn mt-1">Reservar</a>
+                                    <a href="#" class="btn mt-1 ">Reservar</a>
                                 </div>
                             </div>
                         </div>

@@ -12,14 +12,14 @@
     height: 200px;
   }
   .card a {
-    color: rgb(218, 230, 227) !important;
-    background-color: #a5c5e4 !important; /*color del boton*/
+    color: rgb(18, 24, 23) !important;
+    background-color: #1e2227 !important; /*color del boton*/
   }
   .card a:hover {
     background-color: #5eb0d9 !important; /*color del boton al selecionar*/
   }
   .card-body {
-    background-color: #e1eff5 !important;
+    background-color: #171a1c !important;
   }
   .img-border {
     border-radius: 150px 150px;
