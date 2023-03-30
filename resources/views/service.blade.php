@@ -62,14 +62,14 @@
                 <div class="row row-cols-1 row-cols-md-3 g-3">
                     <div class="col">
                         <div class="card text-bg-light" style="width: 17rem;">
-                            <img class="card-img-top" src="{{ $service->url_image }}" width="50" height="140">
+                            <img class="card-img-top" src="{{asset('images')}}/{{$service->url_image}}" width="50" height="140">
                             <div class="card-body text-white">
                                 <h5 class="card-title">{{ $service->full_name }}</h5>
                                 <div class="iconos">
                                     <ul class="action">
                                       
-                                        <li><i class="bi bi-coin"> {{ $service->price }}</i></li>
-                                        <li><i class="bi bi-telephone-fill"> {{ $service->phone }}</i></li>
+                                        <li><i class="bi bi-coin">Lps {{ $service->price }}</i></li>
+                                        <li><i class="bi bi-telephone-fill"> Tel {{ $service->phone }}</i></li>
                                         <li><i class="bi bi-envelope-fill"> {{ $service->email }}</i></li>
                                     </ul>
                                 </div>

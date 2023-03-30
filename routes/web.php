@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\categoryController;
+use App\Http\Controllers\CollaboratorController;
 
 //login-register
 use App\Http\Controllers\RegisterController;
@@ -90,3 +91,20 @@ Route::get('/edit-category/{category_id}', [categoryController::class, 'editCate
 Route::post('/edit-category',[categoryController::class, 'updateCategory'])->name('category.update');
 
 Route::get('/delete-category/{category_id}', [categoryController::class, 'deleteCategory']);
+
+
+//TODO HACERCA DE COLLABORATORS CRUD
+
+Route::get('/add-collaborator', [CollaboratorController::class, 'addCollaborator']);
+
+Route::post('/add-collaborator',[CollaboratorController::class, 'storeCollaborator'])->name('collaborator.store');
+
+Route::get('/all-collaborators', [CollaboratorController::class, 'collaborators']);
+
+Route::get('/edit-collaborator/{collab_id}', [CollaboratorController::class, 'editCollaborator']);
+
+Route::post('/edit-collaborator',[CollaboratorController::class, 'updateCollaborator'])->name('collaborator.update');
+
+Route::get('/delete-collaborator/{collab_id}', [CollaboratorController::class, 'deleteCollaborator']);
+
+

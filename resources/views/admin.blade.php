@@ -39,7 +39,7 @@
 -->
 
 <a class="btn btn-primary" href="{{ url('all-categories/') }}">Mostrar Categorias</a>
-<!--<a class="btn btn-primary" href="{{ url('all-collaborators/') }}">Mostrar Colaboradores</a>-->
+<a class="btn btn-primary" href="{{ url('all-collaborators/') }}">Mostrar Colaboradores</a>
 </div>
 </body>
 </html>

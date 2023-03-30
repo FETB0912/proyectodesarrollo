@@ -14,6 +14,7 @@ class Collaborator extends Model
      * @var string
      */
     protected $table = 'collaborators';
+    protected $primaryKey = 'collab_id';
     /**
      * The attributes that are mass assignable.
      *
@@ -24,5 +25,6 @@ class Collaborator extends Model
         'lastname',
         'phone',
         'email',
+        'url_image'
     ];
 }
