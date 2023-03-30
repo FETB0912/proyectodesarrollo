@@ -82,7 +82,8 @@ class categoryController extends Controller
         $category->image=$imageName;
         $category->save();
 
-        return back()->with('category_added','Category record has been inserted');//Message Alert
+        //return back()->with('category_added','Category record has been inserted');//Message Alert
+        return redirect('all-categories')->with('mensaje','Empleado agregado con exito');
     }
 
     public function categories()
@@ -118,8 +119,8 @@ class categoryController extends Controller
         $category->description=$description;
         $category->image= $imageName;
         $category->save();
-
-        return back()->with('category_updated','Category record has been updated');//Message Alert
+        return redirect('all-categories')->with('mensaje','Empleado agregado con exito');
+        //return back()->with('category_updated','Category record has been updated');//Message Alert
     }
 
     public function deleteCategory($category_id)

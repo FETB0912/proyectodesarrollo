@@ -39,7 +39,10 @@
                                 <input type="file" name="file" class="form-control" onchange="previewFile(this)"/>
                                 <img id="previewImg" src="" alt="preview image" style="max-width:130px;margin-top:20px;"/>
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <a class="btn btn-warning" href="{{ url('all-categories/') }}">Regresar</a>
+                            </div>
                         </form>
                     </div>
                 </div>

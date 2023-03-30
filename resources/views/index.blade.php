@@ -47,7 +47,7 @@
   </section>
   <div class="container-fluid  text-white text-center">
 <br>  
-<h1>Que nos hace differentes</h1>
+
   <div class="row">
   <div class="col-2"></div>
      <div class="col text-center parra" style="font-size: 20px; color: black">
