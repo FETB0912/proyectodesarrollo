@@ -11,7 +11,7 @@
            <hr>
            <div class="card-group">
   <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="img/sonia.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title" style="color: white">Sonia Padilla</h5>
       <p class="card-text" style="color: white">Lic. en Informática administrativa</p>
@@ -19,7 +19,7 @@
     
   </div>
   <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="img/osman.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title" style="color: white">Osman Cruz</h5>
       <p class="card-text" style="color: white">Ing. en Tecnologias Computacionales</p>
@@ -27,7 +27,7 @@
  
   </div>
   <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="img/maria.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title" style="color: white">Maria Jimenez</h5>
       <p class="card-text" style="color: white">Lic. en Informática administrativa</p>
@@ -35,7 +35,7 @@
    
   </div>
   <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="img/fernanda.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title" style="color: white">Fernando Torres</h5>
       <p class="card-text" style="color: white">Ing. en Tecnologias Computacionales</p>
@@ -43,7 +43,7 @@
     
   </div>
   <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="img/alice.jpg"class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title" style="color: white">Alice López</h5>
       <p class="card-text" style="color: white">Ing. en Tecnologias Computacionales</p>
