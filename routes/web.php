@@ -119,7 +119,7 @@ Route::post('/edit-collaborator',[CollaboratorController::class, 'updateCollabor
 
 Route::get('/delete-collaborator/{collab_id}', [CollaboratorController::class, 'deleteCollaborator']);
 
-//TODO HACERCA DE SERVICES ||CRUD|| /OSMAN/ALICE/SONIA 
+//TODO ACERCA DE SERVICES ||CRUD|| /OSMAN/ALICE/SONIA 
 
 Route::get('/all-services', [ServiceController::class, 'index']);
 
