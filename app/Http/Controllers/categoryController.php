@@ -11,7 +11,12 @@ use Illuminate\Support\Facades\DB;
 
 
 class categoryController extends Controller
-{
+{    
+    /**
+     * show muestra 3 registros de la BD
+     *
+     * @return void
+     */
     public function show()
     {
         $categories = category::limit(3)->get();
@@ -22,14 +27,26 @@ class categoryController extends Controller
 
 
     }
-
+    
+    /**
+     * showService Muesrta servicios segun la categoria que pertenece(index)
+     *
+     * @param  mixed $request
+     * @return void
+     */
     public function showService(Request $request)
     {
         // dd($request);
         $service = Service::where('category_id', $request->category_id)->first();
         dd($service->category);
     }
-
+    
+    /**
+     * servicesByCategory Complementa el mostrar servicios por categoria
+     *
+     * @param  mixed $request
+     * @return void
+     */
     public function servicesByCategory(Request $request)
     {
         $services = DB::table('services as s')
@@ -61,13 +78,25 @@ class categoryController extends Controller
        
     }
 
-    //FERNANDO ENRIQUE TORRES CRUD
-
+    //FERNANDO ENRIQUE TORRES y FERNANDA JIMENEZ CRUD
+    
+    /**
+     * addCategory CRUD Agregar categorias
+     *
+     * @param  mixed $request
+     * @return void
+     */
     public function addCategory(Request $request)
     {
         return view ('add-category');
     }
-
+    
+    /**
+     * storeCategory Almacena las categorias ingresadas en el Crud add-categories
+     *
+     * @param  mixed $request
+     * @return void
+     */
     public function storeCategory(Request $request)
     {
         $name = $request->name;
@@ -85,13 +114,24 @@ class categoryController extends Controller
         //return back()->with('category_added','Category record has been inserted');//Message Alert
         return redirect('all-categories')->with('mensaje','Empleado agregado con exito');
     }
-
+    
+    /**
+     * categories Muestra todas las categorias almacenadas
+     *
+     * @return void
+     */
     public function categories()
     {
         $categories = Category::all();
         return view('all-categories',compact('categories'));
     }
-
+    
+    /**
+     * editCategory Lleva al view de categorias
+     *
+     * @param  mixed $category_id
+     * @return void
+     */
     public function editCategory($category_id)
     {
        // dd($category_id);
@@ -100,7 +140,13 @@ class categoryController extends Controller
         //dd($category);
         return view('edit-category',compact('category'));
     }
-
+    
+    /**
+     * updateCategory Edita las categorias
+     *
+     * @param  mixed $request
+     * @return void
+     */
     public function updateCategory(Request $request)
     {
         $name = $request->name;
@@ -122,7 +168,13 @@ class categoryController extends Controller
         return redirect('all-categories')->with('mensaje','Empleado agregado con exito');
         //return back()->with('category_updated','Category record has been updated');//Message Alert
     }
-
+    
+    /**
+     * deleteCategory Elimina las categorias
+     *
+     * @param  mixed $category_id
+     * @return void
+     */
     public function deleteCategory($category_id)
     {
         $category = Category::find($category_id);

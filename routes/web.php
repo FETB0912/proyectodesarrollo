@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\categoryController;
 use App\Http\Controllers\CollaboratorController;
+use App\Http\Controllers\ServiceController;
 
 //login-register
 use App\Http\Controllers\RegisterController;
@@ -106,5 +107,11 @@ Route::get('/edit-collaborator/{collab_id}', [CollaboratorController::class, 'ed
 Route::post('/edit-collaborator',[CollaboratorController::class, 'updateCollaborator'])->name('collaborator.update');
 
 Route::get('/delete-collaborator/{collab_id}', [CollaboratorController::class, 'deleteCollaborator']);
+
+//Services
+
+Route::get('/all-services', [ServiceController::class, 'index']);
+
+Route::get('/delete-service/{service_id}', [ServiceController::class, 'deleteService']);
 
 

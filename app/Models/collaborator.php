@@ -27,4 +27,10 @@ class Collaborator extends Model
         'email',
         'url_image'
     ];
+
+
+    public function service(): BelongsTo
+    {
+        return $this->belongsTo(Service::class);
+    }
 }
