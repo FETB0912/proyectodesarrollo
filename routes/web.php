@@ -27,12 +27,15 @@ use App\Http\Controllers\TarjetaController;
 |
 */
 
+//OSMAN CRUZ Y ALICE LOPEZ 'INDEX'
+
 Route::get('/', function () {
     return view('index');
 });
 
 Route::get('/', [HomeController::class, 'index']);
 
+//SONIA PADILLA 'SERVICIOS'
 
 Route::get('/service', function () {
     return view('service');
@@ -41,9 +44,13 @@ Route::get('/service', function () {
 //tarjeta
 //Route::get('/', [TarjetaController::class, 'index']);
 
+//MARIA FERNANDA JIMENEZ
+
 Route::get('/acercade', function () {
     return view('acercade');
 });
+
+//ALICE LOPEZ 
 
 Route::get('/admin', function () {
     return view('admin');
@@ -52,13 +59,17 @@ Route::get('/fundadores', function () {
     return view('fundadores');
 });
 
+//SONIA PADILLA 
+
 Route::get('/category', [categoryController::class, 'show']);
+
+//OSMAN CRUZ Y SONIA PADILLA
 
 Route::get('/services/{category_id}', [categoryController::class,'servicesByCategory']);
 
 Route::get('/category/{category_id}', [categoryController::class, 'showService'])->name('show.service');
 
-
+//ALICE LOPEZ
 //login-register
 //register
 Route::get('/register', [RegisterController::class, 'show']);
@@ -78,7 +89,7 @@ Route::get('/home', [HomeController::class, 'index']);
 Route::get('/logout', [LogoutController::class, 'logout']);
 
 
-//FERNANDO ENRIQUE TORRES CRUD
+//FERNANDO ENRIQUE TORRES / MARIA FERNANDA JIMENEZ ||CRUD||
 //TODO HACERCA DE CATEGORIES
 
 Route::get('/add-category', [categoryController::class, 'addCategory']);
@@ -108,10 +119,11 @@ Route::post('/edit-collaborator',[CollaboratorController::class, 'updateCollabor
 
 Route::get('/delete-collaborator/{collab_id}', [CollaboratorController::class, 'deleteCollaborator']);
 
-//Services
+//TODO HACERCA DE SERVICES ||CRUD|| /OSMAN/ALICE/SONIA 
 
 Route::get('/all-services', [ServiceController::class, 'index']);
 
 Route::get('/delete-service/{service_id}', [ServiceController::class, 'deleteService']);
 
+//SE TRABAJO EN EQUIPO EN LA RESOLUCION DE ERRORES APARECIAN EN CADA UNA DE LA ASIGNACIONES INDIVIDUALES. 
 

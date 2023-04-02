@@ -34,14 +34,22 @@ class Service extends Model
     
     ];
 
+        
     /**
-     * Get the user that owns the phone.
+     * category Relacion de Categoria con Servicios
+     *
+     * @return HasOne
      */
     public function category(): HasOne
     {
         return $this->hasOne(Category::class, 'category_id', 'category_id');
     }
-
+    
+    /**
+     * collaborator category Relacion de Colaboradores con Servicios
+     *
+     * @return HasOne
+     */
     public function collaborator(): HasOne 
     {
         return $this->hasOne(Collaborator::class, 'collab_id', 'collab_id');

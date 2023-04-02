@@ -11,13 +11,24 @@ use Illuminate\Support\Facades\Auth;
 
 class RegisterController extends Controller
 {
-  
+      
+    /**
+     * show
+     *
+     * @return void
+     */
     public function show(){
         if(Auth::check()){
             return redirect('/home'); // linea que si esta autenticado se vaya a la vista home practicamente al index
         }
         return view('auth.register');
-    }
+    }    
+    /**
+     * register
+     *
+     * @param  mixed $request
+     * @return void
+     */
     public function register(RegisterRequest $request){
         $user = User::create($request->validated());
         return redirect('/login')->with('seccess', 'Account created successfully');//linea que lleva a la pagina que quiera que se muestre despues de registrarse

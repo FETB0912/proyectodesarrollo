@@ -9,7 +9,12 @@ use App\Models\category;
 use Illuminate\Support\Facades\Auth;
 
 class categoryController extends Controller
-{
+{    
+    /**
+     * show Muestra las categorias en el apartado de categorias (navbar opcion Servicios)
+     *
+     * @return void
+     */
     public function show()
     {
       $categories=category::get();

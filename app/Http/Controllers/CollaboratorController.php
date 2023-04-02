@@ -9,12 +9,24 @@ use App\Models\Service;
 
 class CollaboratorController extends Controller
 {
-    //
+        
+    /**
+     * addCollaborator nos lleva a la vista para crear un colaborador
+     *
+     * @param  mixed $request
+     * @return void
+     */
     public function addCollaborator(Request $request)
     {
         return view ('add-collaborator');
     }
-
+    
+    /**
+     * storeCollaborator guarda el registro de colaborador 
+     *
+     * @param  mixed $request
+     * @return void
+     */
     public function storeCollaborator(Request $request)
     {
     
@@ -39,21 +51,38 @@ class CollaboratorController extends Controller
         //return back()->with('collaborator_added','collaborator record has been inserted');//Message Alert
         return redirect('all-collaborators')->with('mensaje','Empleado agregado con exito');
     }
-
+    
+    /**
+     * collaborators muestra la vista de todos los colaboradores creados
+     *
+     * @return void
+     */
     public function collaborators()
     {
         $collaborators = collaborator::all();
         return view('all-collaborators',compact('collaborators'));
     }
 
-
+    
+    /**
+     * editCollaborator nos lleva a la vista para editar colaborador segun su id
+     *
+     * @param  mixed $collab_id
+     * @return void
+     */
     public function editCollaborator($collab_id)
     {
         $collaborator = collaborator::where('collab_id',$collab_id)->first();
         return view('edit-collaborator',compact('collaborator'));
     }
 
-
+    
+    /**
+     * updateCollaborator guarda los cambios realizados al registro (segun id) de colaborador
+     *
+     * @param  mixed $request
+     * @return void
+     */
     public function updateCollaborator(Request $request)
     {
         $name = $request->name;
@@ -76,7 +105,13 @@ class CollaboratorController extends Controller
         return redirect('all-collaborators')->with('mensaje','Empleado agregado con exito');
 
     }
-
+    
+    /**
+     * deleteCollaborator elimina colaborador
+     *
+     * @param  mixed $collab_id
+     * @return void
+     */
     public function deleteCollaborator($collab_id)
     {
         $collaborator = Collaborator::find($collab_id);

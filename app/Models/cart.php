@@ -9,7 +9,7 @@ class Cart extends Model
 {
     use HasFactory;    
     /**
-     * The table associated with the model.
+     * The table associated with the model.|| COMING SOON ||
      *
      * @var string
      */

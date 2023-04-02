@@ -9,7 +9,12 @@ use Illuminate\Support\Facades\Auth;
 class LoginController extends Controller
 {
     //
-
+    
+    /**
+     * show
+     *
+     * @return void
+     */
     public function show(){
     if(Auth::check()){
         return redirect('/'); // linea que si esta autenticado se vaya a la vista home practicamente al index
@@ -18,7 +23,13 @@ class LoginController extends Controller
 
     return view('auth.login');
     }
-    
+        
+    /**
+     * login funcion para validar
+     *
+     * @param  mixed $request
+     * @return void
+     */
     public function login(LoginRequest $request){
         $credentials = $request->getCredentials();
 
@@ -32,6 +43,13 @@ class LoginController extends Controller
         return $this->authenticated($request, $user);
    }
 
+/**
+ * authenticated manda al index (Home Page)
+ *
+ * @param  mixed $request
+ * @param  mixed $user
+ * @return void
+ */
 public function authenticated(Request $request, $user){
     return redirect('/');
 }
